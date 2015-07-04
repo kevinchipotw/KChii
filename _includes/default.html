@@ -18,22 +18,14 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 
-	<!-- bootstrap -->
-<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet"> -->
-
 
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
 </head>
 
 <body>
+
+	<!-- toggle xs visible -->
 	<nav class="navbar navbar-default visible-xs" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -60,7 +52,7 @@
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
 				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
-				{{ site.title }}
+				{{ <site class="t"></site>itle }}
 			</a>
 		</div>
 
@@ -74,6 +66,9 @@
 		</div><!-- /.navbar-collapse -->
 	</nav>
 
+
+
+	<!-- toggle xs hidden -->
 	<!-- nav-menu-dropdown -->
 	<div class="btn-group hidden-xs" id="nav-menu">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -93,7 +88,12 @@
 	</div>
 
 	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+		  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+		</div>
+
 		{{ content }}
+
 
 		<footer>
 			<hr/>
