@@ -28,4 +28,4 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-# BASE_PATH: https://github.com/kevinchipotw/KChii/tree/master
+BASE_PATH: https://github.com/kevinchipotw/KChii/tree/gh-pages
