@@ -1,5 +1,7 @@
 
-
+a {
+    text-decoration: none !important;
+}
 
 .categories h3{
 	padding-top: 7px;
