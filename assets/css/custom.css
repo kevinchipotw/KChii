@@ -1,0 +1,23 @@
+
+
+
+.categories > h3{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin:0;
+	/*background-color: #428bca;*/
+} 
+
+.categories > h3:hover{
+	color: black;
+	background-color: #428bca;
+}
+
+.categories >.active > h3{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin:0;
+	border-left: 4px solid #e6550d;
+	background-color: #428bca;
+}
+
