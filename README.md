@@ -1,1 +1,0 @@
-This is Li-Kai (Kevin) Chi's personal website.
