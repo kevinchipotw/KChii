@@ -1,61 +1,74 @@
 ---
-title: Exemplar
-nav: projects
-subnav: exemplar-home
-layout: default
+layout: page
+tagline:
 ---
-<p>
-  This is an example of the default theme I use for my jekyll sites. This
-  theme is used for my <a href="http://tybenz.com">blog</a> and my project sites.
-</p>
 
-<p>
-  This site uses a combination of the following:
-</p>
+{% for post in paginator.posts %}
 
-<ol>
-  <li><a href="http://jekyllrb.com/">Jekyll</a>: Static site generator</li>
-  <li><a href="http://sass-lang.com">Sass</a>: CSS preprocessor</li>
-  <li><a href="http://bourbon.io">Bourbon</a>: Set of generic Sass mixins</li>
-  <li><a href="http://neat.bourbon.io">Neat</a>: Set of grid-based Sass mixins (dependent on Bourbon)</li>
-  <li>Fonts: <a href="http://www.fontsquirrel.com/fonts/bebas-neue">Bebas Neue</a>, <a href="https://github.com/adobe/source-sans-pro">Adobe Source Sans Pro</a>, <a href="https://github.com/adobe/source-code-pro">Adobe Source Code Pro</a></li>
-</ol>
+<article class="home">
 
-<br />
+  <span class="post-date">
+    {% assign d = post.date | date: "%d" | plus:'0' %}
+    {{ post.date | date: "%B" }}
+    {% case d %}
+    {% when 1 or 21 or 31 %}{{ d }}st,
+    {% when 2 or 22 %}{{ d }}nd,
+    {% when 3 or 23 %}{{ d }}rd,
+    {% else %}{{ d }}th,
+    {% endcase %}
+    {{ post.date | date: "%Y" }}
+  </span>
 
-<article class="post no-border">
-    <div class="post-header">
-        <p class="date">Feb 21, 2012</p>
-        <h1>Posts</h1>
-    </div>
-    <div class="post-body">
-      <p>
-        This is what a post looks like. Straight forward. Date goes above the header. Content goes below the header.
-      </p>
-      <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    </div>
-</article>
+  <h2>
+    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  </h2>
 
-<h1>Boxes</h1>
-<div id="projects">
-  {% for page in site.pages %}
-    {% if page.box == true %}
-      {% if page.link %}
-        <a class="project" href="{{ page.link }}">
-      {% else %}
-        <a class="project" href="{{ page.url | replace: '/index.html', '' }}">
-      {% endif %}
-          <div class="project-header">
-              <h2>
-                  {{ page.title }}
-              </h2>
-          </div>
-          <div class="project-body">
-            <p>
-                {{ page.summary }}
-            </p>
-          </div>
-        </a>
+  <div>
+    {% if post.fullview %}
+    {{ post.content }}
+    {% else %}
+    {% if post.shortinfo %}
+    {{ post.shortinfo }}
+    {% elsif post.description %}
+    {{ post.description }}
+    {% else %}
+    {{ post.excerpt }}
     {% endif %}
-  {% endfor %}
-</div>
+    {% endif %}
+  </div>
+
+</article>
+{% endfor %}
+<hr/>
+
+<ul class="pager"> 
+
+  {% if paginator.previous_page %}
+  <li class="previous">
+    {% if paginator.previous_page == 1 %}
+    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+    {% else %}
+    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
+    {% endif %}
+  </li>
+  {% else %}
+  <li class="previous disabled">
+    <a>&larr; Newer</a>
+  </li>
+  {% endif %}
+  
+  <li>
+    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </li>
+
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
+  </li>
+  {% else %}
+  <li class="next disabled">
+    <a>Older &rarr;</a>        
+  </li>
+  {% endif %}
+
+</ul>
