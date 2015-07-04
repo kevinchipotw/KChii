@@ -1,6 +1,9 @@
 ---
-name : Resume
+title: Resume
+permalink: /resume/
+
 ---
+
 
 <!DOCTYPE html>
 <html>
@@ -12,7 +15,10 @@ name : Resume
     {% include header.html %}
 
 	<div class="col-sm-3 sidebar hidden-xs" style="padding-left: 0px; padding-right: 0px; ">
-		{% include sidebar.html %}
+		{% include sidebar_info.html %}
+		{% include sidebar_categories/sidebar_categories_resume.html %}
+		<br>
+		{% include sidebar_contacts.html %}
 	</div>
 
 	<div class="col-sm-9 col-sm-offset-3">
@@ -34,4 +40,5 @@ name : Resume
   </body>
 
 </html>
+
 

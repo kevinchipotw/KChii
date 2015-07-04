@@ -1,33 +1,3 @@
-
-
-<header class="sidebar-header" role="banner">		
-	<img src="{{ site.BASE_PATH }}/assets/img/me.jpg" class="img-rounded" height="150" width="165"/>
-
-	<h3 class="title">
-        <a href="{{ site.BASE_PATH }}/">{{ site.author.name }}</a>
-    </h3>
-</header>
-
-{% if site.author.bio %}
-<div id="bio" class="text-center">
-	{{ site.author.bio }}
-
-</div>
-{% endif %}
-
-
-<div class = "categories text-center">
-
-	<div class = "active">
-	<h3>About Me</h3>
-	</div>
-
-	<h3>Resume</h3>
-	<h3>Projects</h3>
-	<h3>School Assignments</h3>
-</div>
-
-<br>
 <div id="contact-list" class="text-center">
 	<ul class="list-unstyled list-inline">
 		{% if site.author.github %}
@@ -52,7 +22,6 @@
 		</li>
 		{% endif %}
 		
-
 <!-- 		{% if site.author.twitter %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
@@ -62,7 +31,4 @@
 		{% endif %} -->
 	</ul>
 </div>
-
-
-
 

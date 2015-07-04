@@ -1,23 +1,29 @@
 
 
 
-.categories > h3{
-	padding-top: 5px;
-	padding-bottom: 5px;
+.categories h3{
+	padding-top: 7px;
+	padding-bottom: 7px;
 	margin:0;
-	/*background-color: #428bca;*/
+	color: white;
+
 } 
 
-.categories > h3:hover{
-	color: black;
-	background-color: #428bca;
+.categories h3:hover{
+	text-decoration: none;
+	background-color: #40556A;
+
 }
 
-.categories >.active > h3{
-	padding-top: 5px;
-	padding-bottom: 5px;
+
+.categories .active{
 	margin:0;
 	border-left: 4px solid #e6550d;
-	background-color: #428bca;
+	background-color: #40556A;
 }
+
+
+/*#40556A
+428bca*/
+
 
