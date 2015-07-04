@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 name : dbyll
 ---
@@ -36,49 +35,3 @@ name : dbyll
 
 </html>
 
-||||||| merged common ancestors
----
-theme :
-  name : dbyll
----
-{% include default.html %}
-=======
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-
-    <div class="col-sm-3 sidebar hidden-xs">
-      <div class = "sidebar">
-        {% include sidebar.html %}
-      </div>
-    </div>
-
-    <div class="col-sm-9 col-sm-offset-3">
-      
-      
-      {% include header.html %}
-      <div class="page-header">
-        <h1>
-          {{ page.title }} 
-          {% if page.tagline %} 
-            <small>{{ page.tagline }}</small>
-          {% endif %}
-        </h1>
-      </div>
-
-      {{ content }}
-
-      {% include footer.html %}
-
-    </div>
-    
-
-  </body>
-
-</html>
-
->>>>>>> fb350f9b5bc34632a84488960af7a55eea64fc8b
