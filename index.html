@@ -1,231 +1,316 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta charset="utf-8">
+	<title>dbyll</title>
+	
+	<meta name="author" content="dbyll">
 
-  <title>Exemplar | Tyler Benziger</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="http://awes0.me/avatar-small.png
-?s=16">
-  <link rel="stylesheet" href="http://tybenz.com/exemplar/css/reset.css">
-  <link rel="stylesheet" href="http://tybenz.com/exemplar/css/font.css">
-  <link rel="stylesheet" href="http://tybenz.com/exemplar/css/mobile.css">
-  <link rel="stylesheet" href="http://tybenz.com/exemplar/css/desktop.css" media="(min-width:40em)">
-  <link rel="stylesheet" href="http://tybenz.com/exemplar/css/pygments.css">
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:300,500,300italic,500italic|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" charset="utf-8" src="http://tybenz.com/exemplar/js/matchmedia.js"></script>
-  <script type="text/javascript" charset="utf-8" src="http://tybenz.com/exemplar/js/picturefill.js"></script>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="github">
-      <a href="https://github.com/tybenz/exemplar"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-    </div>
-    <header>
-    <div class="container">
-        <div class="profile">
-            <div class="social">
-                <a href="http://twitter.com/tybenz">
-                    <div data-picture data-alt="Twitter">
-                        <div data-src="/exemplar/img/twitter16.png"></div>
-                        <div data-src="/exemplar/img/twitter32.png"     data-media="(-webkit-min-device-pixel-ratio: 2)"></div>
-                        <noscript><img src="/exemplar/img/twitter16.png" alt="Twitter"></noscript>
-                    </div>
-                </a>
-                <a href="http://github.com/tybenz">
-                    <div data-picture data-alt="Github">
-                        <div data-src="/exemplar/img/octocat16.png"></div>
-                        <div data-src="/exemplar/img/octocat32.png"     data-media="(-webkit-min-device-pixel-ratio: 2)"></div>
-                        <noscript><img src="/exemplar/img/octocat16.png" alt="Github"></noscript>
-                    </div>
-                </a>
-            </div>
-            <div class="avatar" data-picture data-alt="avatar">
-                <div data-src="http://awes0.me/avatar-small.png
-?s=54"></div>
-                <div data-src="http://awes0.me/avatar-small.png
-?s=108" data-media="(-webkit-min-device-pixel-ratio: 2)"></div>
-                <noscript><img src="http://awes0.me/avatar-small.png
-?s=54" alt="avatar"></noscript>
-            </div>
-        </div>
-        <h5 class="logo"><a href="http://tybenz.com">Tyler Benziger</a></h5>
-        <nav class="main">
-            <ul>
-                
-                    <li><a href="http://tybenz.com">Blog</a></li>
-                
-                
-                <li><a href="http://tybenz.com/about">About</a></li>
-                
-                
-                <li><a href="http://tybenz.com/projects" class="active">Projects</a></li>
-                
-            </ul>
-        </nav>
-        <div class="nav-slider">
-            <div class="nav-selection projects"></div>
-        </div>
-        <div class="subnav-slider">
-            <div class="subnav-selection exemplar-home"></div>
-        </div>
-        <nav class="subnav">
-            <ul>
-                
-                  <li><a href="/exemplar" class="active" data-subnav="exemplar-home">Home</a></li>
-                
-                
-                    <li><a href="/exemplar/docs" data-subnav="exemplar-docs">Docs</a></li>
-                
-                
-                    <li><a href="https://github.com/tybenz/exemplar/archive/master.zip" data-subnav="download">Download</a></li>
-                
-            </ul>
-        </nav>
-    </div>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/dbtek">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:dbyll@ismaildemirbilek.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=35" class="img-circle" />
+				
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/"></a>
+    </h3>
 </header>
 
 
-    <section id="main">
-        <article class="container">
-          <h1 class="hero">Exemplar</h1>
-          <p>
-  This is an example of the default theme I use for my jekyll sites. This
-  theme is used for my <a href="http://tybenz.com">blog</a> and my project sites.
-</p>
-
-<p>
-  This site uses a combination of the following:
-</p>
-
-<ol>
-  <li><a href="http://jekyllrb.com/">Jekyll</a>: Static site generator</li>
-  <li><a href="http://sass-lang.com">Sass</a>: CSS preprocessor</li>
-  <li><a href="http://bourbon.io">Bourbon</a>: Set of generic Sass mixins</li>
-  <li><a href="http://neat.bourbon.io">Neat</a>: Set of grid-based Sass mixins (dependent on Bourbon)</li>
-  <li>Fonts: <a href="http://www.fontsquirrel.com/fonts/bebas-neue">Bebas Neue</a>, <a href="https://github.com/adobe/source-sans-pro">Adobe Source Sans Pro</a>, <a href="https://github.com/adobe/source-code-pro">Adobe Source Code Pro</a></li>
-</ol>
-
-<br />
-
-<article class="post no-border">
-    <div class="post-header">
-        <p class="date">Feb 21, 2012</p>
-        <h1>Posts</h1>
-    </div>
-    <div class="post-body">
-      <p>
-        This is what a post looks like. Straight forward. Date goes above the header. Content goes below the header.
-      </p>
-      <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    </div>
-</article>
-
-<h1>Boxes</h1>
-<div id="projects">
-  
-    
-  
-    
-  
-    
-      
-        <a class="project" href="/boxes/this-is-a-box-1">
-      
-          <div class="project-header">
-              <h2>
-                  This is a box
-              </h2>
-          </div>
-          <div class="project-body">
-            <p>
-                Boxes make up a small 2 column grid on larger screens and shrink to single column on smaller screens
-            </p>
-          </div>
-        </a>
-    
-  
-    
-  
-    
-      
-        <a class="project" href="/boxes/this-is-a-box-2">
-      
-          <div class="project-header">
-              <h2>
-                  This is a box
-              </h2>
-          </div>
-          <div class="project-body">
-            <p>
-                Boxes make up a small 2 column grid on larger screens and shrink to single column on smaller screens
-            </p>
-          </div>
-        </a>
-    
-  
+<div id="bio" class="text-center">
+	Your stylish, minimalist theme!
 </div>
 
-        </article>
-    </section>
 
-    <footer>
-    <nav class="container">
-        <ul>
-            <li>&copy; Tyler Benziger 2013</li>
-        </ul>
-    </nav>
-</footer>
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/dbtek">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:dbyll@ismaildemirbilek.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://pinterest.com/asd123">
+				<i class="fa fa-pinterest fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://linkedin.com/pub/asd123">
+				<i class="fa fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
 
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>dbyll </h1>
+</div>
+
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    November
+    15th,
+    
+    2013
+  </span>
+
+  <h2>
+    <a href="/general/setup/demo/2013/11/15/hello-world.html">Hello World!</a>
+  </h2>
+
+  <div>
+    
+    <p><strong>dbyll</strong> is minimalist, stylish theme for jekyll. Supports gravatar, account links (github, twitter, e-mail, pinterest, résume file) and a bio.  </p>
+
+<p><strong>dbyll</strong> is brought to you by <strong><a href="http://ismaildemirbilek.com">dbtek</a></strong>. Open sourced under <a href="http://opensource.org/licenses/MIT">MIT</a> license.</p>
+
+<h3 id="dbyll-is-on-github">dbyll is on GitHub</h3>
+
+<p><a class="btn btn-default" href="https://github.com/dbtek/dbyll">Grab your copy now!</a></p>
+
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    November
+    15th,
+    
+    2013
+  </span>
+
+  <h2>
+    <a href="/general/setup/demo/2013/11/15/configuration.html">Configuration</a>
+  </h2>
+
+  <div>
+    
+    <p>In your config file change these settings</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">dbyll</span>
+<span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span>  
+  <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">yourname</span>  
+  <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">youremail</span>  
+  <span class="l-Scalar-Plain">github</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">asd123</span>  
+  <span class="l-Scalar-Plain">twitter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">asd123</span>  
+  <span class="l-Scalar-Plain">pinterest</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">asd123</span>  
+  <span class="l-Scalar-Plain">linkedin</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">asd123</span>  
+  <span class="l-Scalar-Plain">resume</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">asd123</span>  
+  <span class="l-Scalar-Plain">bio</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Your stylish,  minimalist theme!</span>  
+  <span class="l-Scalar-Plain">email_md5</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">md5ofemail</span></code></pre></div>
+
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    November
+    14th,
+    
+    2013
+  </span>
+
+  <h2>
+    <a href="/general/demo/sample/2013/11/14/sample-2.html">Sample 2</a>
+  </h2>
+
+  <div>
+    
+    
+    Sample placeholder post.
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    November
+    14th,
+    
+    2013
+  </span>
+
+  <h2>
+    <a href="/general/demo/2013/11/14/sample.html">Sample</a>
+  </h2>
+
+  <div>
+    
+    
+    Sample placeholder post.
+    
+    
+  </div>
+
+</article>
+
+<hr/>
+
+<ul class="pager"> 
+
+  
+  <li class="previous disabled">
+    <a>&larr; Newer</a>
+  </li>
+  
+  
+  <li>
+    <span class="page_number">Page: 1 of 1</span>
+  </li>
+
+  
+  <li class="next disabled">
+    <a>Older &rarr;</a>        
+  </li>
+  
+
+</ul>
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2015 dbyll with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
 </body>
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33073396-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-</script>
-<script type="text/javascript" charset="utf-8">
-    document.onreadystatechange = function() {
-        if ( document.readyState == 'complete' ) {
-            var active = document.querySelector( 'header nav.main a.active' ).innerHTML.toLowerCase(),
-                links = document.querySelectorAll( 'header nav.main li a'),
-                selection = document.querySelector( 'header .nav-selection' ),
-                subactive = document.querySelector( 'header nav.subnav a.active' ).dataset.subnav,
-                sublinks = document.querySelectorAll( 'header nav.subnav li a'),
-                subselection = document.querySelector( 'header .subnav-selection' ),
-                i, j, link;
-            for ( i = 0; i < links.length; i++ ) {
-                link = links[ i ];
-                link.addEventListener( 'mouseover', function() {
-                    selection.className = 'nav-selection';
-                    selection.className = 'nav-selection ' + this.innerHTML.toLowerCase();
-                });
-                link.addEventListener( 'mouseout', function() {
-                    selection.className = 'nav-selection ' + active;
-                });
-            }
-            for ( i = 0; i < sublinks.length; i++ ) {
-                link = sublinks[ i ];
-                link.addEventListener( 'mouseover', function() {
-                    subselection.className = 'subnav-selection';
-                    subselection.className = 'subnav-selection ' + this.dataset.subnav;
-                });
-                link.addEventListener( 'mouseout', function() {
-                    subselection.className = 'subnav-selection ' + subactive;
-                });
-            }
-        }
-    };
-</script>
-
 </html>
+
