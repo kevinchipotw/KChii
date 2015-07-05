@@ -12,16 +12,21 @@ a {
 } 
 
 .categories h3:hover{
-	text-decoration: none;
-	background-color: #40556A;
+	background-color: #3D5063;
 
 }
 
 
-.categories .active{
+.categories h3:active{
 	margin:0;
 	border-left: 4px solid #e6550d;
-	background-color: #40556A;
+	background-color: #3D5063;
+}
+
+.active{
+	margin:0;
+	border-left: 4px solid #e6550d;
+	background-color: #3D5063;
 }
 
 

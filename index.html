@@ -1,45 +1,13 @@
 ---
-title: About Me
+layout: default
+title: home_page
 tagline:
 ---
 
 
+<h1>About Me</h1>
 
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-	<div class="col-sm-3 sidebar hidden-xs" style="padding-left: 0px; padding-right: 0px; ">
-		{% include sidebar_info.html %}
-		{% include sidebar_categories/sidebar_categories_aboutme.html %}
-		<br>
-		{% include sidebar_contacts.html %}
-	</div>
-
-	<div class="col-sm-9 col-sm-offset-3">
-		<div class="page-header">
-		  <h1>
-		  	{{ page.title }} 
-		  	{% if page.tagline %} 
-		  		<small>{{ page.tagline }}</small>
-		  	{% endif %}
-		  </h1>
-		</div>
-
-		{{ content }}
-
-		{% include footer.html %}
-
-	</div>
-
-  </body>
-
-</html>
+<h1>Resume</h1>
 
 
 
