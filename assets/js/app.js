@@ -1,3 +1,5 @@
+
+
 $( document ).ready(function() {
 
 	/* Sidebar height set */
@@ -13,4 +15,10 @@ $( document ).ready(function() {
 	
 	contact_list.mouseleave(function(){ scontacts.fadeOut(); });
 
+	
+
 });
+
+
+
+
