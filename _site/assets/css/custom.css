@@ -16,13 +16,6 @@ a {
 
 }
 
-
-.categories h3:active{
-	margin:0;
-	border-left: 4px solid #e6550d;
-	background-color: #3D5063;
-}
-
 .active{
 	margin:0;
 	border-left: 4px solid #e6550d;
@@ -30,7 +23,5 @@ a {
 }
 
 
-/*#40556A
-428bca*/
 
 
