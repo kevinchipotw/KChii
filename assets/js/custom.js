@@ -5,8 +5,8 @@
 
 $(document).ready(function() {
 
-	$("h3").click(function () {
-	    $("h3").removeClass("active");
+	$(".category").click(function () {
+	    $(".category").removeClass("active");
 	    $(this).addClass("active");   
 	});
 
@@ -33,6 +33,12 @@ $(document).ready(function() {
 	$("#projects").click(function() {
 	    $('html, body').animate({
 	        scrollTop: $("#projects_scroll").offset().top
+	    }, 1200);
+	});
+
+	$("#internships").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#intern_scroll").offset().top
 	    }, 1200);
 	});
 
