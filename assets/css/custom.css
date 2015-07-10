@@ -25,10 +25,13 @@ hr {
 
 }
 
-
+li{
+	font-size: 18px;
+}
 
 /*sidebar*/
 .categories h3{
+	font-size: 20px;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	margin:0;
