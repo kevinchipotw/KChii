@@ -30,6 +30,11 @@ li{
 }
 
 /*sidebar*/
+#sidebar_name{
+	font-size: 23px;
+}
+
+
 .categories h3{
 	font-size: 20px;
 	padding-top: 7px;
