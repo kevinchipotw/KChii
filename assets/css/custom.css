@@ -11,6 +11,22 @@ a {
     text-decoration: none !important;
 }
 
+hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-top: 2px solid #36495C;
+}
+
+.img-thumbnail {
+	border-top: 3px solid #636363;
+	border-bottom: 3px solid #636363;
+	border-left: 1px solid #636363;
+	border-right: 1px solid #636363;
+
+}
+
+
+
 /*sidebar*/
 .categories h3{
 	padding-top: 7px;
