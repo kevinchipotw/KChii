@@ -4,6 +4,12 @@ title: home_page
 tagline:
 ---
 
+<div class = "visible-xs">
+<br><br><br><br>
+</div>
+
+<br>
+
 <div id = "aboutme_scroll"></div>
 <h1>About Me</h1>
 <hr>

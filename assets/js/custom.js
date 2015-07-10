@@ -49,6 +49,44 @@ $(document).ready(function() {
 	});
 
 
+	//nav duplicate
+	$("#nav-aboutme").click(function() {
+	    $('html, body').animate({
+	        scrollTop: (0)
+	    }, 1200);
+	});
+
+	$("#nav-resume").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#resume_scroll").offset().top-80
+	    }, 1200);
+	});
+
+	$("#nav-techskills").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#techskills_scroll").offset().top-80
+	    }, 1200);
+	});
+
+	$("#nav-projects").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#projects_scroll").offset().top-80
+	    }, 1200);
+	});
+
+	$("#nav-internships").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#intern_scroll").offset().top-80
+	    }, 1200);
+	});
+
+	$("#nav-extra").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#extra_scroll").offset().top-80
+	    }, 1200);
+	});
+
+
 });
 
 
