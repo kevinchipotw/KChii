@@ -176,26 +176,20 @@ Used Matlab and LED board to design and simulate a traffic light system
 
 ###Certificates  
 
-####Carnegie Leadership Training
+####Carnegie Leadership Training<span style = "float: right">August 2014</span></h4>
 
   
 
-###Clubs Participation  
-
-####Hall Council  
-
-####CSA Club  
-
-####Model UN Club
+###University Clubs 
+- Hall Council  
+- CSA Club  
+- Model UN Club
 
 
 ###Personal Interests  
-
-####Go   
-
-####Basketball  
-
-####Movies
+- Go   
+- Basketball  
+- Movies
 
 <br><br><br>
 
