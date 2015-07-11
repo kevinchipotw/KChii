@@ -182,7 +182,7 @@ Used Matlab and LED board to design and simulate a traffic light system
 
 ###Certificates  
 
-####Carnegie Leadership Training<span style = "float: right">August 2014</span>
+####Dale Carnegie Leadership Course: Highest Award for Achievement<span style = "float: right">August 2014</span>
 
   
 
