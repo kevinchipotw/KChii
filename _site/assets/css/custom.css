@@ -1,5 +1,6 @@
 
 h1{
+	font-family: 'Roboto', cursive;
 	margin-top: 10px;
 }
 
@@ -31,11 +32,22 @@ li{
 
 /*sidebar*/
 #sidebar_name{
-	font-size: 23px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+
+
+}
+
+#quote{
+	font-family: 'Roboto',sans-serif;
+	font-style: italic;
 }
 
 
 .categories h3{
+	font-family: 'Roboto', cursive;
+	font-weight: 500;
 	font-size: 20px;
 	padding-top: 7px;
 	padding-bottom: 7px;

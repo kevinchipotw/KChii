@@ -187,15 +187,24 @@ Used Matlab and LED board to design and simulate a traffic light system
   
 
 ###University Clubs 
-- Hall Council  
-- CSA Club  
-- Model UN Club
+
+####Chines Student Association<span style = "float: right">2014 - 2015</span>
+
+####Hall Council<span style = "float: right">2013 - 2014</span>
+
+####Model United Nation<span style = "float: right">2013 - 2014</span>
+
 
 
 ###Personal Interests  
-- Go   
-- Basketball  
-- Movies
+
+####Go
+
+####Basketball
+
+####Go
+
+
 
 <br><br><br>
 
