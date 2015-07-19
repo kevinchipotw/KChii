@@ -9,9 +9,9 @@ $(document).ready(function () {
         $(document).off("scroll");
         
         $('a').each(function () {
-            $(this).removeClass('active');
+            $(this).parent().parent().removeClass('active');
         })
-        $(this).addClass('active');
+        $(this).parent().parent().addClass('active');
       
         var target = this.hash,
             menu = target;
@@ -23,7 +23,53 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
+
+    $(".navbar-category").click(function () {
+        $(".navbar-category").removeClass("active");
+        $(this).addClass("active");   
+    });
+
+
+    //nav duplicate for xs screens
+    $("#nav-aboutme").click(function() {
+        $('html, body').animate({
+            scrollTop: (0)
+        }, 1200);
+    });
+
+    $("#nav-resume").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#resume").offset().top-80
+        }, 1200);
+    });
+
+    $("#nav-techskills").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#techskills").offset().top-80
+        }, 1200);
+    });
+
+    $("#nav-projects").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top-80
+        }, 1200);
+    });
+
+    $("#nav-internships").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#internship").offset().top-80
+        }, 1200);
+    });
+
+    $("#nav-extra").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#extra_curriculum").offset().top-80
+        }, 1200);
+    });
+
 });
+
+
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
@@ -31,11 +77,11 @@ function onScroll(event){
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu-center a').removeClass("active");
-            currLink.addClass("active");
+            $('#menu-center a').parent().parent().removeClass("active");
+            currLink.parent().parent().addClass("active");
         }
         else{
-            currLink.removeClass("active");
+            currLink.parent().parent().removeClass("active");
         }
     });
 }
