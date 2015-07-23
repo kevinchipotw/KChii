@@ -9,7 +9,8 @@ p{
 }
 
 a {
-    /*text-decoration: none !important;*/
+	color: white;
+    text-decoration: none !important;
 }
 
 hr {
