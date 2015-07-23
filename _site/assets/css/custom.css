@@ -8,10 +8,23 @@ p{
 	font-size: 17px;
 }
 
-a {
+.category a{
 	color: white;
     text-decoration: none !important;
 }
+
+.category a:hover{
+  text-decoration:none;
+  color:white;
+}
+
+.category a:visited{
+	color: white
+
+}
+
+
+
 
 hr {
   margin-top: 0px;
@@ -46,7 +59,7 @@ li{
 }
 
 
-.categories h3{
+.category h3{
 	font-family: 'Roboto', cursive;
 	font-weight: 500;
 	font-size: 20px;
@@ -56,7 +69,7 @@ li{
 	color: white;
 } 
 
-.categories h3:hover{
+.category h3:hover{
 	background-color: #3D5063;
 }
 
