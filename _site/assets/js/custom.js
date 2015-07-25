@@ -24,6 +24,12 @@ $(document).ready(function () {
         });
     });
 
+    $('.category').on('click', function(e){
+        this.childNodes[0].childNodes[0].click();
+    })
+
+
+
     $(".navbar-category").click(function () {
         $(".navbar-category").removeClass("active");
         $(this).addClass("active");   
