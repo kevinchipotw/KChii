@@ -38,7 +38,7 @@ tagline:
 <h1>Resume</h1>
 <hr>
 
-<img src="{{ site.BASE_PATH }}/assets/img/Li-Kai,Chi_Resume.jpg" alt="..." style="max-height:1200px; width: 98%;" class="img-thumbnail"/>
+<img src="{{ site.BASE_PATH }}/assets/img/Li-Kai,Chi_Resume.jpg" alt="..." style="max-height:1200px; width: 90%;" class="img-thumbnail"/>
 <br><br>
 <p><a href="{{ site.BASE_PATH }}/assets/img/Li-Kai,Chi_Resume.pdf" download="Li-Kai,Chi_Resume"><span class="btn btn-lg btn-success">Download Resume</span></a></p>
 
