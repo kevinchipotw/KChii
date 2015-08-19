@@ -1,0 +1,32 @@
+---
+name: resume
+---
+
+
+<!DOCTYPE html>
+<html>
+
+  {% include resume/head.html %}
+
+  <body>
+
+    {% include resume/navbar.html %}
+
+	<div class="col-sm-3 sidebar hidden-xs" style="padding-left: 0px; padding-right: 0px; ">
+		{% include resume/sidebar_info.html %}
+		{% include resume/sidebar_categories.html %}
+		<br>
+		{% include resume/sidebar_contacts.html %}
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		{{ content }}
+		{% include resume/footer.html %}
+	</div>
+
+  </body>
+  
+
+</html>
+

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: resume
 title: home_page
 tagline:
 ---
@@ -251,7 +251,7 @@ Held successful fundraiser, calculate appropriate budget for each event based on
 </div>
 
 
-<br><br><br>
+<br><br><br><br><br>
 
 
 
