@@ -1,0 +1,32 @@
+---
+name: art
+---
+
+
+<!DOCTYPE html>
+<html>
+
+  {% include art/head.html %}
+
+  <body>
+
+    {% include art/navbar.html %}
+
+	<div class="col-sm-3 sidebar hidden-xs" style="padding-left: 0px; padding-right: 0px; ">
+		{% include art/sidebar_info.html %}
+		{% include art/sidebar_categories.html %}
+		<br>
+		{% include art/sidebar_contacts.html %}
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		{{ content }}
+		{% include art/footer.html %}
+	</div>
+
+  </body>
+  
+
+</html>
+
