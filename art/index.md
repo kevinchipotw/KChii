@@ -116,7 +116,53 @@ tagline:
 </div>
 
 
+<div id = "A8">
+<br>
+<h3>Extra Credit</h3>
+<hr>
+<p>This is a extra credit that I used my photography skills to make a collage of the nature in Rochester and technology. I believe that people should walk into nature more because it is more beautiful and interesting than technology.</p>
+
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/1.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/2.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/3.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/4.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/5.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/6.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/7.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/8.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/9.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/10.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+<br>
+<br>
+<img src="{{ site.BASE_PATH }}/assets/img/SA114/ExtraCredit/11.jpg" alt="..." style="max-height: 500px; width: 90%;" class="img-thumbnail" />
+
+
+
+</div>
+
+
+
 <br>
 <br>
 <br>
 <br>
+
+
